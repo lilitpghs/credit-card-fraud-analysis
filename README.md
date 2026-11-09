@@ -33,9 +33,9 @@ When does card fraud happen, how much does it cost, and which simple alert rule 
 
 ## Recommendations
 
-1. Start with two targeted alert rules: night + €1 or less to spot stolen cards early, and night + over €250 to protect the most money per check. Together they create about 2,260 checks per day and cover 16% of frauds and 14% of fraud money, so compare that with team capacity first.
-2. Test tighter controls overnight, and measure the effect before rolling them out.
-3. Treat transactions of €1 or less as a possible card-testing warning, and monitor the card for follow-up attempts.
+1. Automatically flag two types of night payment: payments of €1 or less, which may be criminals testing stolen cards and payments over €250, where each flag covers the most fraud money. Don't block them automatically, because about 98–99% are genuine. Test asking customers to confirm them, with analysts reviewing suspicious cases.
+2. Test tighter controls overnight and measure the effect before rolling them out.
+3. Treat transactions of €1 or less as a possible card-testing warning and monitor the card for follow-up attempts.
 4. Put high-value alerts first in the analyst queue.
 
 ## Data
@@ -45,7 +45,6 @@ The data is the [Credit Card Fraud Detection dataset](https://www.kaggle.com/dat
 - **Rows:** 284,807 raw rows, or 283,726 after removing 1,081 exact duplicates.
 - **Columns:** `Time`, `Amount`, `Class` (1 = fraud) and `V1`–`V28`, which are anonymized.
 
-The CSV is about 144 MB, which is over GitHub's 100 MB file limit, so it is not in this repository.
 
 ## Method
 
@@ -58,8 +57,8 @@ The CSV is about 144 MB, which is over GitHub's 100 MB file limit, so it is not 
 ## Limitations
 
 - **Short window:** two days of data cannot show weekly or seasonal patterns.
-- **Rules need more testing:** I tested these rules on only 2 days of data, and one rule found just 12 frauds, so they need testing on new data. They also miss most fraud.
-- **Clock time is inferred:** `Time` counts seconds from the first transaction, and the dataset does not give the clock time of that transaction. The "night" findings assume the recording starts near midnight, based on the overnight dip in volume.
+- **Rules need more testing:** I tested these rules on only 2 days of data and one rule found just 12 frauds, so they need testing on new data. They also miss most fraud.
+- **Clock time is inferred:** `Time` counts seconds from the first transaction and the dataset does not give the clock time of that transaction. The "night" findings assume the recording starts near midnight, because the number of transactions falls sharply overnight.
 - **Limited fields:** the data has no merchant, country or channel, and `V1`–`V28` can't be interpreted in business terms.
 - **Currency:** the dataset does not state one. Amounts are shown in € because the cardholders were European.
 
