@@ -4,7 +4,7 @@ When does card fraud happen, how much does it cost, and which simple alert rule 
 
 **Tools:** Python (pandas, NumPy), SQL (SQLite), Matplotlib, Seaborn
 
-**[View the full analysis notebook](credit_card_fraud_analysis.ipynb)**
+
 
 ## Key findings
 
