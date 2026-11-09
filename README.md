@@ -73,28 +73,3 @@ The CSV is about 144 MB, which is over GitHub's 100 MB file limit, so it is not 
 └── README.md
 ```
 
-## Run it yourself
-
-1. Clone the repository, replacing `<your-username>` and `<repo-name>` with your own:
-
-   ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   ```
-
-2. Install the dependencies from inside the project folder:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Download `creditcard.csv` from [Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) and put it next to the notebook.
-
-4. Open the notebook and run all cells:
-
-   ```bash
-   jupyter notebook credit_card_fraud_analysis.ipynb
-   ```
-
-## Author
-
-**Lilit Poghosyan**
