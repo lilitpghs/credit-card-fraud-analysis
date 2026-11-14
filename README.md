@@ -68,7 +68,6 @@ The data is the [Credit Card Fraud Detection dataset](https://www.kaggle.com/dat
 ├── credit_card_fraud_analysis.ipynb   # Full analysis, with outputs
 ├── figures/                           # Charts used in the analysis
 ├── outputs/                           # Summary tables for Tableau, Power BI or Excel
-├── requirements.txt
 └── README.md
 ```
 
