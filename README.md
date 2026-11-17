@@ -1,6 +1,6 @@
 # Credit Card Fraud Analysis
 
-When does card fraud happen, how much does it cost, and which simple alert rule should a fraud team start with? This project answers those questions using 283,726 real, anonymized card transactions.
+When does card fraud happen, how much does it cost and which simple alert rule should a fraud team start with? This project answers those questions using 283,726 real, anonymized card transactions.
 
 **Tools:** Python (pandas, NumPy), SQL (SQLite), Matplotlib, Seaborn
 
