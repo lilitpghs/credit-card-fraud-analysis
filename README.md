@@ -66,3 +66,17 @@ The data is the [Credit Card Fraud Detection dataset](https://www.kaggle.com/dat
 ├── requirements.txt                   # Python packages and versions
 └── README.md
 ```
+## Limitations
+
+- **Short window:** two days of data cannot show weekly or seasonal patterns.
+- **Rules need more testing:** the rules were chosen and measured on the same 2 days and one rule rests on only 12 frauds, so they need testing on new data. They also miss most fraud.
+- **Clock time is inferred:** `Time` counts seconds from the first transaction. The "night" findings assume the recording starts near midnight, because the number of transactions falls sharply overnight.
+- **No card ID:** the data cannot show whether a small "test" payment is followed by larger fraud on the same card.
+- **Limited fields:** no merchant, country or channel and `V1`–`V28` can't be interpreted in business terms.
+- **Currency:** the dataset does not state one. Amounts are shown in € because the cardholders were European.
+
+## How to run it
+
+1. Download `creditcard.csv` from [Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) and put it next to the notebook.
+2. Install the packages: `pip install -r requirements.txt`
+3. Open the notebook and select **Kernel → Restart & Run All**.
