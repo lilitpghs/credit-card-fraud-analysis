@@ -56,14 +56,6 @@ The data is the [Credit Card Fraud Detection dataset](https://www.kaggle.com/dat
 4. **SQL:** answered the core questions again in SQL, using CTEs and window functions. All queries are in [`sql/`](sql/).
 5. **Rule testing:** used SQL to compare six simple alert rules on number of checks, frauds found and fraud money covered.
 
-## Limitations
-
-- **Short window:** two days of data cannot show weekly or seasonal patterns.
-- **Rules need more testing:** I tested these rules on only 2 days of data and one rule found just 12 frauds, so they need testing on new data. They also miss most fraud.
-- **Clock time is inferred:** `Time` counts seconds from the first transaction and the dataset does not give the clock time of that transaction. The "night" findings assume the recording starts near midnight, because the number of transactions falls sharply overnight.
-- **Limited fields:** the data has no merchant, country or channel, and `V1`–`V28` can't be interpreted in business terms.
-- **Currency:** the dataset does not state one. Amounts are shown in € because the cardholders were European.
-
 ## Repository structure
 
 ```text
@@ -74,12 +66,3 @@ The data is the [Credit Card Fraud Detection dataset](https://www.kaggle.com/dat
 ├── requirements.txt                   # Python packages and versions
 └── README.md
 ```
-
-## How to run it
-
-1. Download `creditcard.csv` from [Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) and put it next to the notebook (or in a `data/` folder).
-2. Install the packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Open `credit_card_fraud_analysis.ipynb` and select **Kernel → Restart & Run All**. Charts are saved to `figures/` and summary tables to `outputs/`.
