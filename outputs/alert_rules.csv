@@ -1,0 +1,7 @@
+rule,checks,checks_per_day,frauds_found,pct_of_frauds,checks_per_fraud,fraud_money,pct_of_fraud_money,fraud_money_per_check
+Check everything,283726,141863,473,100.0,600.0,58591.0,100.0,0.21
+Over €250,22571,11285,71,15.0,318.0,43365.0,74.0,1.92
+Night hours,27924,13962,124,26.2,225.0,11059.0,18.9,0.4
+€1 or less,30331,15165,171,36.2,177.0,132.0,0.2,0.0
+Night + over €250,1409,704,12,2.5,117.0,8336.0,14.2,5.92
+Night + €1 or less,3112,1556,64,13.5,49.0,54.0,0.1,0.02

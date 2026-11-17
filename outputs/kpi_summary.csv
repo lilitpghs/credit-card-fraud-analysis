@@ -1,0 +1,10 @@
+KPI,Value
+Total transactions,"283,726"
+Fraudulent transactions,473
+Fraud rate (by count),0.167%
+Total transaction value,"€25,102,002"
+Fraud value (loss exposure),"€58,591"
+Fraud rate (by value),0.233%
+Avg fraud transaction,€123.87
+Avg legitimate transaction,€88.41
+Fraud cases per day,236
