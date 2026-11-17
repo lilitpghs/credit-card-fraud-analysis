@@ -37,7 +37,7 @@ When does card fraud happen, how much does it cost and which simple alert rule s
 
 1. Automatically flag two types of night payment: payments of €1 or less, which may be criminals testing stolen cards and payments over €250, where each flag covers the most fraud money. Don't block them automatically, because about 98–99% are genuine. Test asking customers to confirm them, with analysts reviewing suspicious cases.
 2. Test tighter controls overnight and measure the effect before rolling them out.
-3. Treat transactions of €1 or less as a possible card-testing warning and monitor the card for follow-up attempts.
+3. Treat transactions of €1 or less as a possible card-testing warning and test whether monitoring those cards catches larger fraud later. This data has no card ID, so it cannot show that link.
 4. Put high-value alerts first in the analyst queue.
 
 ## Data
