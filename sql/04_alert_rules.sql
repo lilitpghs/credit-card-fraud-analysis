@@ -1,6 +1,6 @@
 -- Q6: Which simple alert rule should a fraud team start with?
 -- Compares six alert rules on how many checks they create, how many checks it takes
--- to find one fraud, and how much fraud money each check covers.
+-- to find one fraud and how much fraud money each check covers.
 -- The data covers 2 days, so checks_per_day = checks / 2.
 
 WITH rule_checks AS (
